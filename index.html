@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fanm Plus</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#14001f,#220033,#0f0018);
+color:white;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+padding:60px 20px;
+text-align:center;
+background:rgba(255,255,255,0.03);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.logo{
+width:90px;
+height:90px;
+border-radius:50%;
+background:linear-gradient(135deg,#ff4fd8,#a855f7);
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:35px;
+font-weight:bold;
+box-shadow:0 0 25px rgba(255,79,216,0.5);
+margin-bottom:20px;
+}
+
+h1{
+font-size:38px;
+color:#ff7ae6;
+margin-bottom:10px;
+}
+
+header p{
+color:#d6c2e6;
+font-size:15px;
+max-width:600px;
+margin:auto;
+line-height:1.6;
+}
+
+/* SECTION */
+
+.section-title{
+text-align:center;
+margin-top:35px;
+font-size:22px;
+color:#ff7ae6;
+}
+
+/* GRID */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:18px;
+}
+
+/* CARD */
+
+.card{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.08);
+padding:18px;
+border-radius:16px;
+transition:0.3s;
+backdrop-filter:blur(8px);
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#ff4fd8;
+box-shadow:0 0 20px rgba(255,79,216,0.2);
+}
+
+.card h3{
+font-size:17px;
+color:#ff7ae6;
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:14px;
+color:#d6c2e6;
+line-height:1.5;
+margin-bottom:14px;
+}
+
+/* BUTTON */
+
+.btn{
+display:block;
+text-align:center;
+padding:11px;
+border-radius:10px;
+background:linear-gradient(90deg,#ff4fd8,#a855f7);
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+opacity:0.9;
+transform:scale(1.02);
+}
+
+/* FOOTER */
+
+footer{
+margin-top:40px;
+padding:25px;
+text-align:center;
+color:#bca7d4;
+border-top:1px solid rgba(255,255,255,0.08);
+font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+h1{
+font-size:30px;
+}
+
+.section-title{
+font-size:20px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">FP</div>
+
+<h1>Fanm Plus</h1>
+
+<p>
+Yon espas espesyal pou fanm jwenn konsèy,
+zouti, lide biznis, bote, relasyon ak anpil lòt bagay itil.
+</p>
+
+</header>
+
+<!-- SANTE -->
+
+<h2 class="section-title">Sante & Byennèt</h2>
+
+<div class="container">
+
+<div class="card">
+<h3><i class="fa-solid fa-heart"></i> Konsèy Sante</h3>
+
+<p>
+Aprann pran swen kò ou,
+viv pi byen epi jwenn bon abitid chak jou.
+</p>
+
+<a class="btn" href="https://www.who.int" target="_blank">
+Ouvri
+</a>
+</div>
+
+<div class="card">
+<h3><i class="fa-solid fa-leaf"></i> Byennèt</h3>
+
+<p>
+Konsèy sou lavi pozitif,
+repo mantal ak bon enèji.
+</p>
+
+<a class="btn" href="https://www.youtube.com/results?search_query=wellness+women" target="_blank">
+Ouvri
+</a>
+</div>
+
+</div>
+
+<!-- BOTE -->
+
+<h2 class="section-title">Bote & Swen</h2>
+
+<div class="container">
+
+<div class="card">
+<h3><i class="fa-solid fa-spa"></i> Swen Cheve</h3>
+
+<p>
+Ide natirèl pou cheve long,
+solid ak bèl.
+</p>
+
+<a class="btn" href="https://www.youtube.com/results?search_query=hair+care+tips" target="_blank">
+Ouvri
+</a>
+</div>
+
+<div class="card">
+<h3><i class="fa-solid fa-face-smile"></i> Swen Vizaj</h3>
+
+<p>
+Mask natirèl ak konsèy
+pou po bèl ak pwòp.
+</p>
+
+<a class="btn" href="https://www.youtube.com/results?search_query=skin+care+tips" target="_blank">
+Ouvri
+</a>
+</div>
+
+</div>
+
+<!-- BIZNIS -->
+
+<h2 class="section-title">Biznis & Lajan</h2>
+
+<div class="container">
+
+<div class="card">
+<h3><i class="fa-solid fa-money-bill"></i> Ide Biznis</h3>
+
+<p>
+Aprann fè ti biznis
+epi touche lajan sou entènèt.
+</p>
+
+<a class="btn" href="https://www.youtube.com/results?search_query=business+ideas" target="_blank">
+Ouvri
+</a>
+</div>
+
+<div class="card">
+<h3><i class="fa-solid fa-briefcase"></i> Travay Online</h3>
+
+<p>
+Jwenn fason pou travay
+ak telefòn ou fasil.
+</p>
+
+<a class="btn" href="https://www.fiverr.com" target="_blank">
+Ouvri
+</a>
+</div>
+
+</div>
+
+<!-- RELASYON -->
+
+<h2 class="section-title">Relasyon & Motivasyon</h2>
+
+<div class="container">
+
+<div class="card">
+<h3><i class="fa-solid fa-heart-circle-check"></i> Relasyon</h3>
+
+<p>
+Konsèy sou lanmou,
+respè ak konfyans.
+</p>
+
+<a class="btn" href="https://www.youtube.com/results?search_query=relationship+advice" target="_blank">
+Ouvri
+</a>
+</div>
+
+<div class="card">
+<h3><i class="fa-solid fa-star"></i> Motivasyon</h3>
+
+<p>
+Mesaj ak konsèy
+pou ede ou avanse.
+</p>
+
+<a class="btn" href="https://www.youtube.com/results?search_query=motivation+for+women" target="_blank">
+Ouvri
+</a>
+</div>
+
+</div>
+
+<!-- ZOUTI -->
+
+<h2 class="section-title">Zouti Gratis</h2>
+
+<div class="container">
+
+<div class="card">
+<h3><i class="fa-solid fa-paintbrush"></i> Canva</h3>
+
+<p>
+Kreye flyer,
+logo ak design fasil.
+</p>
+
+<a class="btn" href="https://www.canva.com" target="_blank">
+Ouvri
+</a>
+</div>
+
+<div class="card">
+<h3><i class="fa-solid fa-robot"></i> AI Chat</h3>
+
+<p>
+Poze kestyon
+epi jwenn lide rapid.
+</p>
+
+<a class="btn" href="https://chat.openai.com" target="_blank">
+Ouvri
+</a>
+</div>
+
+</div>
+
+<footer>
+© 2026 Fanm Plus — Tout dwa rezève
+</footer>
+
+</body>
+</html>
